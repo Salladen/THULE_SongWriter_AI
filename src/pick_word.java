@@ -23,8 +23,10 @@ public class pick_word {
             double temp_ro = ro.distance(targetWord, word);
             if (temp_ls < current_ls){
                 current_ls = temp_ls;
+                picked_word = word;
 
                 if (temp_ro < current_ro){
+                    current_ro = temp_ro;
                     picked_word = word;
                 }
             }
