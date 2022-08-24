@@ -1,8 +1,3 @@
-"""
-I think I'm going to match strings using \w+ & [^\w]+ and find the string in my list with the closest Levenshtein distance then largest Ratcliff-Obershelp similarity
-And adding to the input which indices of that string (from the list) has to be shifted, and how much (character set wise relative to the previous character left-to-right) to create the matched string
-So that the AI get the sense of "editing" words
-"""
 import numbers
 import os, sys, time, re, textdistance
 import string
