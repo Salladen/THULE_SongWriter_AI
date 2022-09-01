@@ -17,7 +17,7 @@ public class RawData_2_TrainingData {
         try {
             wordlist_file = new File("Data/swe_wordlist_v2.txt");
             regString_file = new File("Data/regexString");
-            song_file = new File("Data/Songs/1.txt");
+            song_file = new File("Data/Song_Compound_Dashes/1.txt");
             reader = new Scanner(wordlist_file);
         }
         catch (FileNotFoundException | NullPointerException e) {
@@ -58,6 +58,7 @@ public class RawData_2_TrainingData {
                 System.out.printf("Match: [%s]\n", matchString);
                 System.out.println("----NOT IN CORPUS----");
                 System.out.printf("Replacement: [%s]\n", pick_word.pick(wordlist, matchString));
+                System.out.println();
             }
         }
     }
